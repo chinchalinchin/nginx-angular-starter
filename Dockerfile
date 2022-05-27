@@ -15,7 +15,7 @@ WORKDIR /home/frontend/
 RUN ng build --prod --output-hashing none
 
 # PRODUCTION SERVER
-FROM nginx:latest
+FROM nginx:stable
 
 # DEPENDENCIES && CONFIGURATION
 RUN apt-get update -y && apt-get install -y curl moreutils && \
